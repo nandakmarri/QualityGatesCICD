@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'jacoco'
-    id 'org.gosu-lang.gosu' version '0.3.10'
 }
 
 repositories {
@@ -18,14 +17,11 @@ dependencies {
 
 sourceSets {
     main {
-        gosu {
-            srcDirs = ['src/main/gosu']
+        java {
+            srcDirs = ['src/main/java']
         }
     }
     test {
-        gosu {
-            srcDirs = ['src/test/gosu']
-        }
         java {
             srcDirs = ['src/test/java']
         }
